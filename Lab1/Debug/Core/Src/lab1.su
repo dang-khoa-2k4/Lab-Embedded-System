@@ -1,0 +1,10 @@
+../Core/Inc/lab1.h:45:6:system_init	8	static
+../Core/Src/lab1.c:14:6:ex_1_chapter_1_handle	8	static
+../Core/Src/lab1.c:22:6:ex_2_chapter_1_handle	8	static
+../Core/Src/lab1.c:59:13:traffic_light_handle	32	static
+../Core/Src/lab1.c:98:6:ex_3_chapter_1_handle	8	static
+../Core/Src/lab1.c:112:6:ex_1_chapter_2_handle	8	static
+../Core/Src/lab1.c:171:6:ex_2_chapter_2_handle	8	static
+../Core/Src/lab1.c:181:6:ex_3_chapter_2_handle	8	static
+../Core/Src/lab1.c:191:6:ex_4_chapter_2_handle	8	static
+../Core/Src/lab1.c:221:6:ex_5_chapter_2_handle	4	static

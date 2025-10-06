@@ -36,6 +36,9 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
+extern SPI_HandleTypeDef hspi1;
+
+extern TIM_HandleTypeDef htim2;
 
 /* USER CODE END ET */
 
@@ -71,6 +74,10 @@ void Error_Handler(void);
 #define INPUT_X2_GPIO_Port GPIOC
 #define INPUT_X3_Pin GPIO_PIN_5
 #define INPUT_X3_GPIO_Port GPIOC
+#define LD_LATCH_Pin GPIO_PIN_6
+#define LD_LATCH_GPIO_Port GPIOG
+#define BTN_LOAD_Pin GPIO_PIN_3
+#define BTN_LOAD_GPIO_Port GPIOD
 
 /* USER CODE BEGIN Private defines */
 

@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.dbclient-js": "javascript",
+        "stdint.h": "c",
+        "software_timer.h": "c",
+        "led_7seg.h": "c",
+        "compare": "c"
+    }
+}

@@ -1,0 +1,10 @@
+../Core/Inc/lab1.h:45:6:system_init	1
+../Core/Src/lab1.c:14:6:ex_1_chapter_1_handle	1
+../Core/Src/lab1.c:22:6:ex_2_chapter_1_handle	6
+../Core/Src/lab1.c:59:13:traffic_light_handle	9
+../Core/Src/lab1.c:98:6:ex_3_chapter_1_handle	1
+../Core/Src/lab1.c:112:6:ex_1_chapter_2_handle	10
+../Core/Src/lab1.c:171:6:ex_2_chapter_2_handle	2
+../Core/Src/lab1.c:181:6:ex_3_chapter_2_handle	1
+../Core/Src/lab1.c:191:6:ex_4_chapter_2_handle	4
+../Core/Src/lab1.c:221:6:ex_5_chapter_2_handle	1
