@@ -61,7 +61,7 @@ static void traffic_light_handle(TrafficLight * light_state, uint16_t *leds, uin
     uint8_t count = 0;
     HAL_GPIO_WritePin(DEBUG_LED_GPIO_Port, leds[0] | leds[1] | leds[2], LED_OFF);
     // handle for timer
-    count = *count_seconds > 10 ? *count_seconds / 10 : *count_seconds;
+    count = *count_seconds >= 10 ? *count_seconds / 10 : *count_seconds;
 
     switch (*light_state) 
     {
@@ -200,10 +200,16 @@ void ex_4_chapter_2_handle()
 {
     static uint8_t hour = 10;
     static uint8_t minute = 0;
-    static uint8_t second = 0;
-    if (hour == 0 && minute == 0 && second == 0)
-    clearAllClock();
-    if (second >= 600) // 60s = 1 minute
+    static uint16_t second = 0;
+    static uint8_t colon = 1;
+
+    if (second % 5 == 0)
+    {
+        led7_SetColon(colon);
+        colon = !colon;
+    }
+
+    if (second >= 6) // 60s = 1 minute
     {
         second = 0;
         minute++;
@@ -233,7 +239,14 @@ void ex_5_chapter_2_handle()
     static uint8_t second = 0;
     static uint8_t shift_counter = 0;  // Đếm để tạo hiệu ứng shift
     static uint8_t display_buffer[4] = {1, 0, 1, 5};  // Buffer hiển thị ban đầu
-    
+    static uint8_t colon = 1;
+
+    if (second % 5 == 0)
+    {
+        led7_SetColon(colon);
+        colon = !colon;
+    }
+
     // Cập nhật thời gian
     if (second >= 600) // 60s = 1 minute
     {

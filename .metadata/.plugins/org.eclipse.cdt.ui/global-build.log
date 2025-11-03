@@ -1,21 +1,308 @@
-22:21:04 **** Incremental Build of configuration Debug for project Lab1 ****
+15:40:00 **** Clean-only build of configuration Debug for project Lab3 ****
+make -j16 clean 
+rm -rf ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.su
+rm -rf ./Core/Startup/startup_stm32f407zetx.d ./Core/Startup/startup_stm32f407zetx.o
+rm -rf ./Core/Src/button.cyclo ./Core/Src/button.d ./Core/Src/button.o ./Core/Src/button.su ./Core/Src/fsmc.cyclo ./Core/Src/fsmc.d ./Core/Src/fsmc.o ./Core/Src/fsmc.su ./Core/Src/gpio.cyclo ./Core/Src/gpio.d ./Core/Src/gpio.o ./Core/Src/gpio.su ./Core/Src/lcd.cyclo ./Core/Src/lcd.d ./Core/Src/lcd.o ./Core/Src/lcd.su ./Core/Src/led_7seg.cyclo ./Core/Src/led_7seg.d ./Core/Src/led_7seg.o ./Core/Src/led_7seg.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/picture.cyclo ./Core/Src/picture.d ./Core/Src/picture.o ./Core/Src/picture.su ./Core/Src/software_timer.cyclo ./Core/Src/software_timer.d ./Core/Src/software_timer.o ./Core/Src/software_timer.su ./Core/Src/spi.cyclo ./Core/Src/spi.d ./Core/Src/spi.o ./Core/Src/spi.su ./Core/Src/stm32f4xx_hal_msp.cyclo ./Core/Src/stm32f4xx_hal_msp.d ./Core/Src/stm32f4xx_hal_msp.o ./Core/Src/stm32f4xx_hal_msp.su ./Core/Src/stm32f4xx_it.cyclo ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/stm32f4xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f4xx.cyclo ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/system_stm32f4xx.su ./Core/Src/tim.cyclo ./Core/Src/tim.d ./Core/Src/tim.o ./Core/Src/tim.su
+rm -rf Lab345.elf Lab345.list Lab345.map default.size.stdout
+ 
+15:40:01 **** Build of configuration Debug for project Lab3 ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/lab1.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/lab1.d" -MT"Core/Src/lab1.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lab1.o"
-In file included from ../Core/Src/lab1.c:7:
-../Core/Inc/lab1.h: In function 'system_init':
-../Core/Inc/lab1.h:50:11: warning: implicit declaration of function 'led7_init' [-Wimplicit-function-declaration]
-   50 |           led7_init();
-      |           ^~~~~~~~~
-../Core/Src/lab1.c: In function 'ex_4_chapter_2_handle':
-../Core/Src/lab1.c:197:9: warning: implicit declaration of function 'clearAllClock' [-Wimplicit-function-declaration]
-  197 |         clearAllClock();
-      |         ^~~~~~~~~~~~~
-../Core/Src/lab1.c:213:5: warning: implicit declaration of function 'led7_SetDigit' [-Wimplicit-function-declaration]
-  213 |     led7_SetDigit(hour / 10, 0, 0);
-      |     ^~~~~~~~~~~~~
-arm-none-eabi-gcc -o "Lab1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\university\Senior\Embedded System\Labs\Lab1\STM32F407ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-D:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/lab1.o: in function `ex_4_chapter_2_handle':
-D:/university/Senior/Embedded System/Labs/Lab1/Debug/../Core/Src/lab1.c:197: undefined reference to `clearAllClock'
-collect2.exe: error: ld returned 1 exit status
-make: *** [makefile:64: Lab1.elf] Error 1
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f407zetx.d" -MT"Core/Startup/startup_stm32f407zetx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f407zetx.o" "../Core/Startup/startup_stm32f407zetx.s"
+arm-none-eabi-gcc "../Core/Src/Lab3.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Lab3.d" -MT"Core/Src/Lab3.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Lab3.o"
+arm-none-eabi-gcc "../Core/Src/button.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/button.d" -MT"Core/Src/button.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/button.o"
+arm-none-eabi-gcc "../Core/Src/fsmc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/fsmc.d" -MT"Core/Src/fsmc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/fsmc.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/lcd.d" -MT"Core/Src/lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lcd.o"
+arm-none-eabi-gcc "../Core/Src/led_7seg.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/led_7seg.d" -MT"Core/Src/led_7seg.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/led_7seg.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/picture.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/picture.d" -MT"Core/Src/picture.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/picture.o"
+arm-none-eabi-gcc "../Core/Src/software_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/software_timer.d" -MT"Core/Src/software_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/software_timer.o"
+arm-none-eabi-gcc "../Core/Src/spi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/spi.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+In file included from ../Core/Src/lcd.c:9:
+../Core/Inc/lcdfont.h:409:29: warning: missing braces around initializer [-Wmissing-braces]
+  409 | const typFNT_GB16 tfont16[]={
+      |                             ^
+  410 | "ff",0x80,0x00,0x80,0x00,0x80,0x00,0x80,0x00,0xFC,0x1F,0x84,0x10,0x84,0x10,0x84,0x10,
+      | {    {
+  411 | 0x84,0x10,0x84,0x10,0xFC,0x1F,0x84,0x10,0x80,0x00,0x80,0x00,0x80,0x00,0x80,0x00,/*"��",0*/
+      |                                                                                }}
+  412 | "ff",0xF8,0x0F,0x08,0x08,0xF8,0x0F,0x08,0x08,0xF8,0x0F,0x80,0x00,0xFF,0x7F,0x00,0x00,
+      | {    {
+  413 | 0xF8,0x0F,0x08,0x08,0x08,0x08,0xF8,0x0F,0x80,0x00,0x84,0x10,0xA2,0x20,0x40,0x00,/*"��",1*/
+      |                                                                                }}
+  414 | "ff",0x00,0x00,0xFE,0x3F,0x02,0x20,0xF2,0x27,0x02,0x20,0x02,0x20,0xFA,0x2F,0x22,0x21,
+      | {    {
+  415 | 0x22,0x21,0x22,0x21,0x12,0x29,0x12,0x29,0x0A,0x2E,0x02,0x20,0xFE,0x3F,0x02,0x20,/*"԰",2*/
+      |                                                                                }}
+  416 | "ff",0x80,0x00,0x80,0x00,0x80,0x00,0xFC,0x1F,0x84,0x10,0x84,0x10,0x84,0x10,0xFC,0x1F,
+      | {    {
+  417 | 0x84,0x10,0x84,0x10,0x84,0x10,0xFC,0x1F,0x84,0x50,0x80,0x40,0x80,0x40,0x00,0x7F,/*"��",3*/
+      |                                                                                }}
+  418 | "ff",0x00,0x00,0xFE,0x1F,0x00,0x08,0x00,0x04,0x00,0x02,0x80,0x01,0x80,0x00,0xFF,0x7F,
+      | {    {
+  419 | 0x80,0x00,0x80,0x00,0x80,0x00,0x80,0x00,0x80,0x00,0x80,0x00,0xA0,0x00,0x40,0x00,/*"��",4*/
+      |                                                                                }}
+  420 | "ff",0x08,0x04,0x08,0x04,0x08,0x04,0xC8,0x7F,0x3F,0x04,0x08,0x04,0x08,0x04,0xA8,0x3F,
+      | {    {
+  421 | 0x18,0x21,0x0C,0x11,0x0B,0x12,0x08,0x0A,0x08,0x04,0x08,0x0A,0x8A,0x11,0x64,0x60,/*"��",0*/
+      |                                                                                }}
+  422 | "ff",0x80,0x00,0x80,0x04,0x80,0x08,0x80,0x08,0xFE,0x3F,0xC0,0x01,0xA0,0x02,0xA0,0x02,
+      | {    {
+  423 | 0x90,0x04,0x88,0x08,0x84,0x10,0x82,0x20,0x81,0x40,0x80,0x00,0x80,0x00,0x80,0x00,/*"��",1*/
+      |                                                                                }}
+  424 | "ff",0x40,0x00,0x40,0x00,0xFF,0x7F,0x20,0x00,0x20,0x00,0xF0,0x0F,0x10,0x08,0x18,0x08,
+      | {    {
+  425 | 0xF4,0x0F,0x12,0x08,0x11,0x08,0xF0,0x0F,0x10,0x08,0x10,0x08,0x10,0x0A,0x10,0x04,/*"��",2*/
+      |                                                                                }}
+  426 | "ff",0x00,0x00,0xDE,0x1F,0x52,0x10,0x4A,0x10,0xCA,0x1F,0x46,0x10,0x4A,0x10,0xD2,0x1F,
+      | {    {
+  427 | 0x52,0x22,0x52,0x12,0x56,0x0C,0x4A,0x04,0x42,0x08,0x42,0x11,0xC2,0x60,0x42,0x00,/*"��",3*/
+      |                                                                                }}
+  428 | "ff",0x00,0x01,0x20,0x01,0x20,0x01,0x10,0x02,0x10,0x02,0x08,0x04,0x04,0x08,0x42,0x10,
+      | {    {
+  429 | 0x41,0x60,0x20,0x00,0x20,0x02,0x10,0x04,0x08,0x04,0xFC,0x0F,0x08,0x08,0x00,0x00,/*"��",4*/
+      |                                                                                }}
+  430 | "ff",0x00,0x00,0xFC,0x1F,0x00,0x10,0x00,0x10,0xFE,0x17,0x00,0x10,0x00,0x10,0xF8,0x11,
+      | {    {
+  431 | 0x08,0x11,0x08,0x11,0x08,0x11,0x08,0x11,0xF8,0x11,0x08,0x11,0x00,0x14,0x00,0x08,/*"˾",5*/
+      |                                                                                }}
+  432 | "ff",0x00,0x01,0x00,0x01,0x3F,0x01,0x20,0x3F,0xA0,0x20,0x92,0x10,0x54,0x02,0x28,0x02,
+      | {    {
+  433 | 0x08,0x02,0x14,0x05,0x24,0x05,0xA2,0x08,0x81,0x08,0x40,0x10,0x20,0x20,0x10,0x40,/*"��",6*/
+      |                                                                                }}
+  434 | "ff",0x00,0x00,0x04,0x01,0xC8,0x3C,0x48,0x24,0x40,0x24,0x40,0x24,0x4F,0x24,0x48,0x24,
+      | {    {
+  435 | 0x48,0x24,0x48,0x2D,0xC8,0x14,0x48,0x04,0x08,0x04,0x14,0x04,0xE2,0x7F,0x00,0x00,/*"ӭ",7*/
+      |                                                                                }}
+  436 | "ff",0x90,0x00,0x90,0x00,0x88,0x3F,0x4C,0x20,0x2A,0x12,0x99,0x0A,0x88,0x12,0x48,0x22,
+      | {    {
+  437 | 0x28,0x22,0x88,0x02,0x08,0x01,0x40,0x00,0x8A,0x20,0x8A,0x48,0x09,0x48,0xF0,0x0F,/*"��",8*/
+      |                                                                                }}
+  438 | "ff",0x08,0x02,0x08,0x02,0x04,0x02,0xC4,0x3F,0x12,0x02,0x5F,0x12,0x48,0x12,0x44,0x12,
+      | {    {
+  439 | 0x42,0x12,0xDF,0x1F,0x02,0x12,0x00,0x02,0x18,0x42,0x07,0x42,0x02,0x7C,0x00,0x00,/*"��",9*/
+      |                                                                                }}
+  440 | "ff",0x10,0x00,0x10,0x00,0xF8,0x07,0x04,0x04,0x02,0x02,0xFD,0x1F,0x84,0x10,0x84,0x10,
+      | {    {
+  441 | 0x84,0x10,0xFC,0x1F,0x04,0x00,0x04,0x40,0x04,0x40,0x04,0x40,0xF8,0x7F,0x00,0x00,/*"ɫ",10*/
+      |                                                                                }}
+  442 | "ff",0x04,0x02,0x04,0x02,0xE4,0x3F,0x04,0x02,0xC4,0x1F,0x5F,0x10,0xC4,0x1F,0x44,0x10,
+      | {    {
+  443 | 0xC4,0x1F,0x44,0x10,0xC4,0x1F,0x5C,0x10,0xF7,0x7F,0x82,0x08,0x40,0x10,0x20,0x20,/*"��",11*/
+      |                                                                                }}
+  444 | "ff",0x40,0x00,0x80,0x00,0xFF,0x7F,0x20,0x00,0x20,0x00,0x10,0x04,0x08,0x08,0xFC,0x1F,
+      | {    {
+  445 | 0x20,0x12,0x20,0x02,0x20,0x02,0x20,0x02,0x10,0x22,0x10,0x22,0x08,0x22,0x06,0x3C,/*"��",12*/
+      |                                                                                }}
+  446 | "ff",0x04,0x00,0x84,0x7F,0xBC,0x00,0x8A,0x00,0x89,0x00,0x88,0x3F,0x88,0x20,0xFF,0x20,
+      | {    {
+  447 | 0x88,0x20,0x88,0x20,0x88,0x3F,0x94,0x00,0xA4,0x00,0xA2,0x00,0x82,0x7F,0x01,0x00,/*"��",13*/
+      |                                                                                }}
+  448 | "ff",0x00,0x00,0xFE,0x21,0x48,0x20,0x48,0x10,0x48,0x08,0x48,0x44,0x48,0x40,0xFF,0x23,
+      | {    {
+  449 | 0x48,0x10,0x48,0x08,0x48,0x44,0x48,0x40,0x44,0x20,0x44,0x10,0x42,0x08,0x41,0x06,/*"��",14*/
+      |                                                                                }}
+  450 | "ff",0x00,0x00,0xFF,0x7F,0x00,0x00,0x00,0x00,0xF2,0x27,0x92,0x24,0x92,0x24,0xF2,0x27,
+      | {    {
+  451 | 0x92,0x24,0x92,0x24,0x92,0x24,0xF2,0x27,0x02,0x20,0x02,0x20,0xFE,0x3F,0x00,0x20,/*"��",15*/
+      |                                                                                }}
+  452 | "ff",0x00,0x00,0xFE,0x3F,0x02,0x20,0xF2,0x27,0x12,0x24,0xF2,0x27,0x02,0x20,0xFA,0x2F,
+      | {    {
+  453 | 0x0A,0x28,0x8A,0x28,0x8A,0x28,0x4A,0x29,0x22,0x22,0x12,0x24,0xFE,0x3F,0x02,0x20,/*"Բ",16*/
+      |                                                                                }}
+  454 | "ff",0x00,0x00,0xFE,0x3F,0x42,0x20,0x42,0x20,0xE2,0x27,0x32,0x22,0x4A,0x21,0x82,0x20,
+      | {    {
+  455 | 0x62,0x23,0x1E,0x3C,0xC2,0x20,0x02,0x21,0x62,0x20,0x82,0x21,0xFE,0x3F,0x02,0x20,/*"ͼ",17*/
+      |                                                                                }}
+  456 | "ff",0x00,0x02,0x08,0x02,0x08,0x02,0x08,0x02,0x08,0x02,0xF8,0x3F,0x08,0x00,0x08,0x00,
+      | {    {
+  457 | 0x08,0x00,0xF8,0x07,0x08,0x04,0x08,0x04,0x08,0x04,0x04,0x04,0x04,0x04,0x02,0x04,/*"Ƭ",18*/
+      |                                                                                }}
+  458 | "ff",0x00,0x00,0xF8,0x0F,0x08,0x08,0x08,0x08,0xF8,0x0F,0x08,0x08,0x08,0x08,0xF8,0x0F,
+      | {    {
+  459 | 0x20,0x02,0x22,0x22,0x24,0x22,0x28,0x12,0x28,0x0A,0x20,0x02,0xFF,0x7F,0x00,0x00,/*"��",19*/
+      |                                                                                }}
+  460 | "ff",0x00,0x00,0xFC,0x1F,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xFF,0x7F,0x80,0x00,
+      | {    {
+  461 | 0x80,0x00,0x88,0x08,0x88,0x10,0x84,0x20,0x82,0x40,0x81,0x40,0xA0,0x00,0x40,0x00,/*"ʾ",20*/
+      |                                                                                }}
+  462 | "ff",0x10,0x04,0x10,0x04,0xFF,0x7F,0x10,0x04,0x00,0x08,0x00,0x1F,0xFC,0x00,0x88,0x08,
+      | {    {
+  463 | 0x10,0x04,0x80,0x00,0xFE,0x3F,0xA0,0x02,0x90,0x04,0x8C,0x18,0x83,0x60,0x80,0x00,/*"��",21*/
+      |                                                                                }}
+  464 | "ff",0x08,0x08,0x10,0x04,0x20,0x02,0xFC,0x1F,0x84,0x10,0x84,0x10,0xFC,0x1F,0x84,0x10,
+      | {    {
+  465 | 0x84,0x10,0xFC,0x1F,0x80,0x00,0x80,0x00,0xFF,0x7F,0x80,0x00,0x80,0x00,0x80,0x00,/*"��",22*/
+      |                                                                                }}
+  466 | "ff",0x10,0x04,0x10,0x04,0xFF,0x7F,0x10,0x04,0x80,0x00,0x80,0x00,0xF8,0x0F,0x88,0x08,
+      | {    {
+  467 | 0x88,0x08,0x88,0x08,0xFF,0x7F,0x40,0x01,0x20,0x02,0x10,0x04,0x0C,0x18,0x03,0x60,/*"Ӣ",23*/
+      |                                                                                }}
+  468 | "ff",0x40,0x00,0x80,0x00,0x80,0x00,0xFF,0x7F,0x08,0x08,0x08,0x08,0x10,0x04,0x10,0x04,
+      | {    {
+  469 | 0x20,0x02,0x40,0x01,0x80,0x00,0x40,0x01,0x20,0x02,0x10,0x04,0x0C,0x18,0x03,0x60,/*"��",24*/
+      |                                                                                }}
+  470 | "ff",0x08,0x02,0x08,0x04,0xC4,0x7F,0x44,0x40,0x12,0x00,0x9F,0x3F,0x08,0x00,0x04,0x00,
+      | {    {
+  471 | 0xC2,0x7F,0x1F,0x04,0x82,0x14,0x80,0x24,0x58,0x44,0x27,0x44,0x02,0x05,0x00,0x02,/*"��",25*/
+      |                                                                                }}
+  472 | "ff",0x80,0x00,0x80,0x00,0x40,0x01,0x20,0x02,0x10,0x04,0x0C,0x18,0xF3,0x67,0x00,0x00,
+      | {    {
+  473 | 0x00,0x00,0xF8,0x0F,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0xF8,0x0F,0x08,0x08,/*"��",26*/
+      |                                                                                }}
+  474 | "ff",0x40,0x00,0x80,0x00,0xFE,0x3F,0x00,0x00,0xF8,0x0F,0x08,0x08,0xF8,0x0F,0x00,0x00,
+      | {    {
+  475 | 0xFE,0x7F,0x02,0x40,0xF1,0x27,0x10,0x04,0x10,0x04,0x08,0x44,0x04,0x44,0x03,0x78,/*"��",27*/
+      |                                                                                }}
+  476 | "ff",0x80,0x00,0x00,0x01,0xFC,0x7F,0x44,0x04,0x44,0x04,0xFC,0x3F,0x44,0x04,0x44,0x04,
+      | {    {
+  477 | 0xC4,0x07,0x04,0x00,0xF4,0x0F,0x24,0x08,0x42,0x04,0x82,0x03,0x61,0x0C,0x1C,0x70,/*"��",28*/
+      |                                                                                }}
+  478 | "ff",0x00,0x20,0xE4,0x23,0x28,0x22,0x28,0x2A,0xA1,0x2A,0xA2,0x2A,0xA2,0x2A,0xA8,0x2A,
+      | {    {
+  479 | 0xA8,0x2A,0xA4,0x2A,0xA7,0x2A,0x84,0x20,0x44,0x21,0x44,0x22,0x24,0x28,0x10,0x10,/*"��",29*/
+      |                                                                                }}
+  480 | "ff",0x00,0x14,0x04,0x24,0x08,0x24,0x08,0x04,0xE0,0x7F,0x00,0x04,0x0F,0x04,0xE8,0x07,
+      | {    {
+  481 | 0x88,0x04,0x88,0x08,0x88,0x08,0xA8,0x08,0x98,0x53,0xE8,0x50,0x40,0x60,0x00,0x40,/*"��",30*/
+      |                                                                                }}
+  482 | "ff",0x10,0x00,0xB8,0x3F,0x8F,0x20,0x88,0x20,0x88,0x20,0xBF,0x3F,0x08,0x00,0x0C,0x00,
+      | {    {
+  483 | 0x9C,0x7F,0x2A,0x04,0x2A,0x04,0x89,0x3F,0x08,0x04,0x08,0x04,0xC8,0x7F,0x08,0x00,/*"��",31*/
+      |                                                                                }}
+  484 | "ff",0x80,0x00,0x00,0x01,0xFC,0x7F,0x04,0x00,0xC4,0x1F,0x04,0x08,0x04,0x05,0x04,0x02,
+      | {    {
+  485 | 0xF4,0x7F,0x04,0x42,0x04,0x22,0x04,0x02,0x02,0x02,0x02,0x02,0x81,0x02,0x00,0x01,/*"��",32*/
+      |                                                                                }}
+  486 | "ff",0x00,0x00,0xE2,0x3F,0x24,0x22,0x24,0x22,0xA0,0x2F,0x20,0x22,0x27,0x22,0xE4,0x3F,
+      | {    {
+  487 | 0x24,0x20,0xA4,0x2F,0xA4,0x28,0xB4,0x28,0xAC,0x2F,0x24,0x20,0x20,0x28,0x10,0x10,/*"��",33*/
+      |                                                                                }}
+  488 | "ff",0x80,0x00,0x84,0x10,0x88,0x10,0x90,0x08,0x90,0x04,0x80,0x00,0xFF,0x7F,0x20,0x02,
+      | {    {
+  489 | 0x20,0x02,0x20,0x02,0x20,0x02,0x10,0x42,0x10,0x42,0x08,0x42,0x04,0x7C,0x03,0x00,/*"��",34*/
+      |                                                                                }}
+  490 | "ff",0x10,0x10,0x12,0x38,0x92,0x07,0x92,0x00,0x92,0x00,0xBE,0x3F,0x82,0x22,0x82,0x22,
+      | {    {
+  491 | 0x9E,0x22,0x92,0x14,0x92,0x14,0x92,0x08,0x92,0x08,0x52,0x14,0x52,0x22,0x31,0x41,/*"��",35*/
+      |                                                                                }}
+  492 | "ff",0x08,0x00,0xC8,0x3F,0x88,0x20,0x88,0x20,0xBF,0x20,0x08,0x11,0x0C,0x11,0x1C,0x11,
+      | {    {
+  493 | 0x2A,0x0A,0x2A,0x0A,0x09,0x04,0x08,0x04,0x08,0x0A,0x08,0x11,0x88,0x20,0x68,0x40,/*"Ȩ",36*/
+      |                                                                                }}
+  494 | "ff",0x40,0x10,0xE0,0x38,0x1C,0x07,0x04,0x01,0x04,0x01,0x7C,0x01,0x44,0x7F,0x44,0x11,
+      | {    {
+  495 | 0x44,0x11,0x7C,0x11,0x04,0x11,0x04,0x11,0x82,0x10,0x82,0x10,0x41,0x10,0x20,0x10,/*"��",37*/
+  496 | };
+      | }}
+../Core/Inc/lcdfont.h:506:29: warning: missing braces around initializer [-Wmissing-braces]
+  506 | const typFNT_GB24 tfont24[]={
+      |                             ^
+  507 | 
+  508 | "ff",0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x18,0x00,0x00,0x08,0x00,0x00,0x08,0x00,0x00,
+      | {    {
+......
+  512 | 0x18,0x00,0x00,0x18,0x00,0x00,0x00,0x00,/*"��",0*/
+      |                                        }}
+  513 | 
+  514 | "ff",0x00,0x00,0x00,0x00,0x00,0x00,0x40,0x00,0x06,0xC0,0xFF,0x07,0x40,0x00,0x06,0xC0,
+      | {    {
+......
+  518 | 0x1E,0x30,0x00,0x1C,0x00,0x00,0x00,0x00,/*"��",1*/
+      |                                        }}
+  519 | 
+  520 | "ff",0x00,0x00,0x00,0x00,0x00,0x00,0x08,0x00,0x30,0xF8,0xFF,0x1F,0x08,0x00,0x10,0x08,
+      | {    {
+......
+  524 | 0xFF,0x1F,0x08,0x00,0x10,0x00,0x00,0x00,/*"԰",2*/
+      |                                        }}
+  525 | 
+  526 | "ff",0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x18,0x00,0x00,0x08,0x00,0x00,0x08,0x00,0x00,
+      | {    {
+......
+  530 | 0x18,0x30,0x00,0xF0,0x1F,0x00,0x00,0x00,/*"��",3*/
+      |                                        }}
+  531 | 
+  532 | "ff",0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x04,0xF0,0xFF,0x0F,0x00,0x00,0x06,0x00,
+      | {    {
+......
+  538 | };
+      | }}
+../Core/Inc/lcdfont.h:548:29: warning: missing braces around initializer [-Wmissing-braces]
+  548 | const typFNT_GB32 tfont32[]={
+      |                             ^
+  549 | "ff",0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x01,0x00,
+      | {    {
+......
+  556 | 0x00,0x80,0x01,0x00,0x00,0x80,0x01,0x00,0x00,0x80,0x00,0x00,0x00,0x00,0x00,0x00,/*"��",0*/
+      |                                                                                }}
+  557 | "ff",0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x01,0x80,0x01,
+      | {    {
+......
+  564 | 0x18,0x98,0x01,0x1C,0x04,0xE0,0x01,0x18,0x00,0xC0,0x00,0x00,0x00,0x00,0x00,0x00,/*"��",1*/
+      |                                                                                }}
+  565 | "ff",0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x08,0xF0,0xFF,0xFF,0x1F,
+      | {    {
+......
+  572 | 0xF0,0xFF,0xFF,0x0F,0x30,0x00,0x00,0x0C,0x10,0x00,0x00,0x04,0x00,0x00,0x00,0x00,/*"԰",2*/
+      |                                                                                }}
+  573 | "ff",0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xC0,0x00,0x00,0x00,0xC0,0x01,0x00,
+      | {    {
+......
+  580 | 0x00,0xC0,0x01,0x38,0x00,0x80,0xFF,0x1F,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,/*"��",3*/
+      |                                                                                }}
+  581 | "ff",0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x03,
+      | {    {
+......
+  589 | };
+      | }}
+In file included from ../Core/Src/main.c:32:
+../Core/Inc/lcd.h:83:13: warning: 'LCD_WR_DATA' declared 'static' but never defined [-Wunused-function]
+   83 | static void LCD_WR_DATA(uint16_t data);
+      |             ^~~~~~~~~~~
+../Core/Inc/lcd.h:84:17: warning: 'LCD_RD_DATA' declared 'static' but never defined [-Wunused-function]
+   84 | static uint16_t LCD_RD_DATA(void);
+      |                 ^~~~~~~~~~~
+../Core/Src/Lab3.c: In function 'main':
+../Core/Src/Lab3.c:111:3: warning: implicit declaration of function 'setTimer3'; did you mean 'setTimer2'? [-Wimplicit-function-declaration]
+  111 |   setTimer3(500);  // Blink every 500ms (2Hz)
+      |   ^~~~~~~~~
+      |   setTimer2
+../Core/Src/Lab3.c:138:9: error: 'flag_timer3' undeclared (first use in this function); did you mean 'flag_timer2'?
+  138 |     if (flag_timer3) {
+      |         ^~~~~~~~~~~
+      |         flag_timer2
+../Core/Src/Lab3.c:138:9: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../Core/Src/Lab3.c:23:
+../Core/Src/Lab3.c: At top level:
+../Core/Inc/lcd.h:83:13: warning: 'LCD_WR_DATA' declared 'static' but never defined [-Wunused-function]
+   83 | static void LCD_WR_DATA(uint16_t data);
+      |             ^~~~~~~~~~~
+../Core/Inc/lcd.h:84:17: warning: 'LCD_RD_DATA' declared 'static' but never defined [-Wunused-function]
+   84 | static uint16_t LCD_RD_DATA(void);
+      |                 ^~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+make: *** [Core/Src/subdir.mk:64: Core/Src/Lab3.o] Error 1
+make: *** Waiting for unfinished jobs....
 "make -j16 all" terminated with exit code 2. Build might be incomplete.
