@@ -2,18 +2,9 @@
 /**
   ******************************************************************************
   * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * <h2><center>&copy; Copyright (c) 2023 STMicroelectronics.
-  * All rights reserved.</center></h2>
-  *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
-  *
+  * @brief          : Lab 3 - Traffic Light System with FSM
+  * @author         : NgoDucAnh and DangKhoa
+  * @version        : 2.0 (Refactored)
   ******************************************************************************
   */
 /* USER CODE END Header */
@@ -26,11 +17,15 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "global.h"
+#include "time_config.h"
+#include "error.h"
+#include "system_init.h"
 #include "software_timer.h"
-#include "led_7seg.h"
 #include "button.h"
-#include "lcd.h"
-#include "picture.h"
+#include "led_display.h"
+#include "fsm_automatic.h"
+#include "fsm_manual.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -40,6 +35,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -50,25 +46,24 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+// Global variables definition (declared in global.h)
+SystemMode current_mode = MODE_NORMAL;
+TrafficState traffic_state = STATE_GREEN1_RED2;
 
+uint8_t red_duration = DEFAULT_RED_DURATION;
+uint8_t green_duration = DEFAULT_GREEN_DURATION;
+uint8_t yellow_duration = DEFAULT_YELLOW_DURATION;
+
+uint8_t temp_duration = 0;
+uint8_t blink_state = 0;
+uint16_t state_counter = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-void system_init();
-void test_LedDebug();
-void test_LedY0();
-void test_LedY1();
-void test_7seg();
-void test_button();
-void test_lcd();
+
 /* USER CODE END PFP */
-
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
 
 /**
   * @brief  The application entry point.
@@ -101,21 +96,45 @@ int main(void)
   MX_TIM2_Init();
   MX_SPI1_Init();
   MX_FSMC_Init();
+
   /* USER CODE BEGIN 2 */
-  system_init();
-  lcd_Clear(WHITE);
-  test_lcd();
+  ErrorCode init_status = system_init();
+  
+  if (init_status != ERROR_NONE) {
+    // Handle initialization error
+    handle_error(ERROR_INIT_FAIL);
+    while(1); // Stop if initialization failed
+  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  while(!flag_timer2);
-	  flag_timer2 = 0;
-	  button_Scan();
-	  test_button();
-
+    // Wait for 50ms tick
+    while (!timer2_flag);
+    timer2_flag = 0;
+    
+    // Scan buttons
+    button_Scan();
+    
+    // Run FSM based on current mode
+    if (current_mode == MODE_NORMAL) {
+      fsm_automatic_run();
+    } else {
+      fsm_manual_run();
+    }
+    
+    // Handle blink timer
+    if (timer3_flag) {
+      timer3_flag = 0;
+      blink_state = !blink_state;
+      setTimer3(BLINK_INTERVAL);  // Restart timer
+    }
+    
+    // Update display
+    update_display();
+    
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -168,67 +187,7 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-void system_init(){
-	  HAL_GPIO_WritePin(OUTPUT_Y0_GPIO_Port, OUTPUT_Y0_Pin, 0);
-	  HAL_GPIO_WritePin(OUTPUT_Y1_GPIO_Port, OUTPUT_Y1_Pin, 0);
-	  HAL_GPIO_WritePin(DEBUG_LED_GPIO_Port, DEBUG_LED_Pin, 0);
-	  timer_init();
-	  led7_init();
-	  button_init();
-	  lcd_init();
-	  setTimer2(50);
-}
 
-uint8_t count_led_debug = 0;
-uint8_t count_led_Y0 = 0;
-uint8_t count_led_Y1 = 0;
-
-void test_LedDebug(){
-	count_led_debug = (count_led_debug + 1)%20;
-	if(count_led_debug == 0){
-		HAL_GPIO_TogglePin(DEBUG_LED_GPIO_Port, DEBUG_LED_Pin);
-	}
-}
-
-void test_LedY0(){
-	count_led_Y0 = (count_led_Y0+ 1)%100;
-	if(count_led_Y0 > 40){
-		HAL_GPIO_WritePin(OUTPUT_Y0_GPIO_Port, OUTPUT_Y0_Pin, 1);
-	} else {
-		HAL_GPIO_WritePin(OUTPUT_Y0_GPIO_Port, OUTPUT_Y0_Pin, 0);
-	}
-}
-
-void test_LedY1(){
-	count_led_Y1 = (count_led_Y1+ 1)%40;
-	if(count_led_Y1 > 10){
-		HAL_GPIO_WritePin(OUTPUT_Y1_GPIO_Port, OUTPUT_Y1_Pin, 0);
-	} else {
-		HAL_GPIO_WritePin(OUTPUT_Y0_GPIO_Port, OUTPUT_Y1_Pin, 1);
-	}
-}
-
-void test_7seg(){
-	led7_SetDigit(0, 0, 0);
-	led7_SetDigit(5, 1, 0);
-	led7_SetDigit(4, 2, 0);
-	led7_SetDigit(7, 3, 0);
-}
-void test_button(){
-	for(int i = 0; i < 16; i++){
-		if(button_count[i] == 1){
-			lcd_ShowIntNum(140, 105, i, 2, BRED, WHITE, 32);
-		}
-	}
-}
-void test_lcd(){
-	lcd_Fill(0, 0, 240, 20, BLUE);
-	lcd_StrCenter(0, 2, "Hello World !!!", RED, BLUE, 16, 1);
-	lcd_ShowStr(20, 30, "Test lcd screen", WHITE, RED, 24, 0);
-	lcd_DrawCircle(60, 120, GREEN, 40, 1);
-	lcd_DrawCircle(160, 120, BRED, 40, 0);
-	lcd_ShowPicture(80, 200, 90, 90, gImage_logo);
-}
 /* USER CODE END 4 */
 
 /**
