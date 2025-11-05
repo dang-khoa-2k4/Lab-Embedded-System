@@ -1,1 +1,78 @@
+# STM32CubeIDE Metadata
 .metadata
+.settings/
+.cproject
+.project
+.mxproject
+
+# Build directories
+Debug/
+Release/
+Build/
+
+# Object files
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.su
+*.d
+*.lst
+
+# Libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Generated files
+*.launch
+.classpath
+language.settings.xml
+
+# Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# IDEs
+.vscode/
+*.swp
+*.swo
+*~
+
+# STM32 specific
+Drivers/CMSIS/
+Drivers/STM32F4xx_HAL_Driver/
+
+# Keep user code
+!Core/Inc/
+!Core/Src/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
