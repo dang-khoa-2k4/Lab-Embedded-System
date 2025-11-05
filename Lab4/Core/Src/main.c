@@ -110,7 +110,7 @@ int main(void)
 	  flag_timer2 = 0;
 	  button_Scan();
 	  ds3231_ReadTime();
-	  displayTime();
+	  fsm_clock();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

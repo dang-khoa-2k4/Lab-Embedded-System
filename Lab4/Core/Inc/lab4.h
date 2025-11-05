@@ -9,6 +9,12 @@
 #define INC_LAB4_H_
 #include "main.h"
 
+const uint16_t coord_x_time[7] = {150, 110, 70, 20, 150, 110, 70};
+const uint16_t coord_y_time[7] = {130, 130, 130, 130, 100, 100, 100};
+
+uint16_t alarm_time[3] = {0, 0, 0};
+uint16_t time_setting[7] = {25, 11, 3, 2, 14, 30, 0};
+
 typedef enum {
     YEAR = 0,
     MONTH,
@@ -18,9 +24,6 @@ typedef enum {
     MIN,
     SEC
 } TimeUnit;
-
-uint16_t alarm_time[7] = {0, 0, 0, 0, 0, 0, 0};
-uint16_t time_setting[7] = {25, 11, 3, 2, 14, 30, 0};
 
 typedef enum {
     INIT,
@@ -32,6 +35,7 @@ typedef enum {
 extern State currentState;
 
 void displayTime();
+void displayTimeWithBlink(TimeUnit unit, uint16_t time_value);
 void timeSetting();
 void alarmSetting();
 
@@ -47,7 +51,6 @@ void updateTime(){
 	ds3231_Write(ADDRESS_MIN, time_setting[MIN]);
 	ds3231_Write(ADDRESS_SEC, time_setting[SEC]);
 }
-
 uint8_t isButtonUp()
 {
     if (button_count[3] == 1)
@@ -55,15 +58,13 @@ uint8_t isButtonUp()
     else
         return 0;
 }
-
 uint8_t isButtonE()
 {
-    if (button_count[11] == 1)
+    if (button_count[12] == 1)
         return 1;
     else
         return 0;
 }
-
 uint8_t isButtonB()
 {
     if (button_count[14] == 1)
@@ -71,7 +72,6 @@ uint8_t isButtonB()
     else
         return 0;
 }
-
 uint8_t isButtonDown()
 {
     if (button_count[7] == 1)
@@ -79,6 +79,5 @@ uint8_t isButtonDown()
     else
         return 0;
 }
-void displayTime();
 
 #endif /* INC_LAB4_H_ */

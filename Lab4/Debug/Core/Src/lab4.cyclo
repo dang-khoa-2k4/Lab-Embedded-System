@@ -1,0 +1,16 @@
+../Core/Inc/lab4.h:45:6:updateTime	1
+../Core/Inc/lab4.h:54:9:isButtonUp	2
+../Core/Inc/lab4.h:61:9:isButtonE	2
+../Core/Inc/lab4.h:68:9:isButtonB	2
+../Core/Inc/lab4.h:75:9:isButtonDown	2
+../Core/Src/lab4.c:19:13:blinkTimeUnit2Hz	3
+../Core/Src/lab4.c:35:13:getCurrentTime	1
+../Core/Src/lab4.c:46:6:displayTime	1
+../Core/Src/lab4.c:57:6:displayTimeWithBlink	4
+../Core/Src/lab4.c:70:13:getModeString	4
+../Core/Src/lab4.c:83:6:setupLCD	1
+../Core/Src/lab4.c:92:16:getMaxDaysInMonth	7
+../Core/Src/lab4.c:110:6:timeSetting	30
+../Core/Src/lab4.c:225:6:alarmSetting	6
+../Core/Src/lab4.c:267:6:fsm_init	1
+../Core/Src/lab4.c:274:6:fsm_clock	11

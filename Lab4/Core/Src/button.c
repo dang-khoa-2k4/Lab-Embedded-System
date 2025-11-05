@@ -29,6 +29,7 @@ void button_Scan(){
 		  } else {
 			  button_index = 23 - i;
 		  }
+		  
 		  if(spi_button & mask) button_count[button_index] = 0;
 		  else button_count[button_index]++;
 //		  if(spi_button & mask) button_count[i] = 0;
