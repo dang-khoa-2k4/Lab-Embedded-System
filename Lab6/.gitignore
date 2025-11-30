@@ -1,0 +1,11 @@
+.setting
+Drivers
+Debug
+ADC Debug.launch
+ADC.ioc
+STM32F407ZGTX_Flash.ld
+STM32F407ZGTX_RAM.ld
+.mxproject
+.project
+.cproject
+.git
