@@ -1,0 +1,72 @@
+# STM32CubeIDE Metadata
+.metadata
+.metadata/
+**/.metadata/
+.settings/
+.cproject
+.project
+.mxproject
+
+# Build directories
+Debug/
+Release/
+Build/
+**/Debug/
+**/Release/
+
+# Object files
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.su
+*.d
+*.lst
+
+# Libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Generated files
+*.launch
+.classpath
+language.settings.xml
+
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# IDEs
+.vscode/
+*.swp
+
+# STM32 HAL Libraries (nếu muốn ignore)
+# Drivers/CMSIS/
+# Drivers/STM32F4xx_HAL_Driver/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+**/config.h
