@@ -7,14 +7,15 @@ uint8_t isButtonClear()
 {
     if (!touch_IsTouched())
         return 0;
-    return touch_GetX() > 60 && touch_GetX() < 180 && touch_GetY() > 80 && touch_GetY() < 130;
+    return touch_GetX() > 60 && touch_GetX() < 180 && touch_GetY() > 150 && touch_GetY() < 200;
 }
 uint8_t isButtonStart()
 {
     if (!touch_IsTouched())
         return 0;
-    return touch_GetX() > 60 && touch_GetX() < 180 && touch_GetY() > 10 && touch_GetY() < 60;
+    return touch_GetX() > 60 && touch_GetX() < 180 && touch_GetY() > 80 && touch_GetY() < 130;
 }
+
 uint8_t isButtonUp()
 {
     if (!touch_IsTouched())
@@ -90,44 +91,61 @@ void lcd_DrawTriangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16
     }
 }
 
+static void draw_gamepad()
+{
+    lcd_DrawTriangle(
+        120, 215, // Đỉnh trên (giữa) - dời xuống
+        108, 240, // Đỉnh trái dưới - thu vào
+        132, 240, // Đỉnh phải dưới - thu vào
+        RED);
+
+    // DOWN - Tam giác hướng xuống (nhỏ hơn)
+    lcd_DrawTriangle(
+        120, 305, // Đỉnh dưới (giữa) - dời lên
+        108, 280, // Đỉnh trái trên - thu vào
+        132, 280, // Đỉnh phải trên - thu vào
+        RED);
+
+    // LEFT - Tam giác hướng trái (nhỏ hơn)
+    lcd_DrawTriangle(
+        65, 260,  // Đỉnh trái (giữa) - dời sang phải
+        95, 248,  // Đỉnh phải trên - thu vào
+        95, 272,  // Đỉnh phải dưới - thu vào
+        RED);
+
+    // RIGHT - Tam giác hướng phải (nhỏ hơn)
+    lcd_DrawTriangle(
+        175, 260, // Đỉnh phải (giữa) - dời sang trái
+        145, 248, // Đỉnh trái trên - thu vào
+        145, 272, // Đỉnh trái dưới - thu vào
+        RED); 
+}
+
+static void show_control_panel()
+{
+    // Vẽ nút START
+    // lcd_Fill(60, 10, 180, 60, GBLUE);
+    // lcd_ShowStr(90, 20, "START", RED, BLACK, 24, 1);
+
+    // // Vẽ nút RESET
+    // lcd_Fill(60, 80, 180, 130, GBLUE);
+    // lcd_ShowStr(90, 90, "RESET", RED, BLACK, 24, 1);
+
+    lcd_Fill(60, 80, 180, 130, GBLUE);
+    lcd_ShowStr(90, 90, "START", RED, BLACK, 24, 1);
+
+    lcd_Fill(60, 150, 180, 200, GBLUE);
+    lcd_ShowStr(90, 160, "RESET", RED, BLACK, 24, 1);
+}
+
 void touchProcess()
 {
     switch (draw_Status)
     {
     case INIT:
-        // display blue button
-        // lcd_Fill(60, 10, 180, 60, GBLUE);
-        // lcd_ShowStr(90, 20, "START", RED, BLACK, 24, 1);
-
-        // lcd_Fill(60, 80, 180, 130, GBLUE);
-        // lcd_ShowStr(90, 90, "RESET", RED, BLACK, 24, 1);
-        // UP - Tam giác hướng lên
-        lcd_DrawTriangle(
-            120, 200, // Đỉnh trên (giữa)
-            100, 250, // Đỉnh trái dưới
-            140, 250, // Đỉnh phải dưới
-            RED);
-
-        // DOWN - Tam giác hướng xuống
-        lcd_DrawTriangle(
-            120, 320, // Đỉnh dưới (giữa)
-            100, 270, // Đỉnh trái trên
-            140, 270, // Đỉnh phải trên
-            RED);
-
-        // LEFT - Tam giác hướng trái
-        lcd_DrawTriangle(
-            50, 260,  // Đỉnh trái (giữa)
-            100, 240, // Đỉnh phải trên
-            100, 280, // Đỉnh phải dưới
-            RED);
-
-        // RIGHT - Tam giác hướng phải
-        lcd_DrawTriangle(
-            190, 260, // Đỉnh phải (giữa)
-            140, 240, // Đỉnh trái trên
-            140, 280, // Đỉnh trái dưới
-            RED);
+        
+        show_control_panel();
+        draw_gamepad();
 
         draw_Status = DRAW;
         break;
@@ -152,11 +170,7 @@ void touchProcess()
         break;
     case START:
         // 240X320
-        lcd_Fill(110, 230, 130, 250, RED);
-        lcd_Fill(110, 270, 130, 290, RED);
-
-        lcd_Fill(80, 250, 100, 270, RED);
-        lcd_Fill(140, 250, 160, 270, RED);
+        draw_gamepad();
 
         if (is_game_over)
         {

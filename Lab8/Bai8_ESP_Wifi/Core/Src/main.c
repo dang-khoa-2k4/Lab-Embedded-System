@@ -24,11 +24,23 @@
 #include "i2c.h"
 #include "spi.h"
 #include "tim.h"
+#include "usart.h"
 #include "gpio.h"
 #include "fsmc.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "lab7.h"
+#include "software_timer.h"
+#include "led_7seg.h"
+#include "button.h"
+#include "lcd.h"
+#include "picture.h"
+#include "ds3231.h"
+#include "sensor.h"
+#include "buzzer.h"
+#include "touch.h"
+#include "uart.h"
+#include "light_control.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -38,6 +50,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define SEND_INTERVAL 600
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -55,7 +69,13 @@
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 void system_init();
-void test_LedDebug();
+void temp_Send();
+
+// Esp status
+uint8_t is_esp_connected = 0;
+uint16_t timer_send_temp = 0;
+uint8_t upload_status_timer = 0;
+
 
 /* USER CODE END PFP */
 
@@ -100,28 +120,24 @@ int main(void)
   MX_DMA_Init();
   MX_ADC1_Init();
   MX_TIM1_Init();
+  MX_USART2_UART_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   system_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
- touch_Adjust();
  lcd_Clear(BLACK);
  while (1)
   {
-	  //scan touch screen
-	  touch_Scan();
-	  //check if touch screen is touched
-//	   if(touch_IsTouched() && draw_Status == DRAW){
-//             //draw a point at the touch position
-//		   lcd_DrawPoint(touch_GetX(), touch_GetY(), RED);
-//	   }
 	  // 50ms task
 	  if(flag_timer2 == 1){
 		  flag_timer2 = 0;
-		  touchProcess();
-		  test_LedDebug();
+		  button_Scan();
+		  test_Esp();
+		  lightProcess();
+		  temp_Send();
 	  }
 
     /* USER CODE END WHILE */
@@ -180,16 +196,43 @@ void system_init(){
 	  timer_init();
 	  button_init();
 	  lcd_init();
-	  touch_init();
+	  uart_init_esp();
 	  setTimer2(50);
+	  HAL_GPIO_WritePin(DEBUG_LED_GPIO_Port, DEBUG_LED_Pin, 0);
 }
 
-uint8_t count_led_debug = 0;
+void temp_Send(){
 
-void test_LedDebug(){
-	count_led_debug = (count_led_debug + 1)%20;
-	if(count_led_debug == 0){
-		HAL_GPIO_TogglePin(DEBUG_LED_GPIO_Port, DEBUG_LED_Pin);
+	if(is_esp_connected == 0) return;
+
+	if(upload_status_timer > 0){
+		upload_status_timer--;
+		if(upload_status_timer == 0){
+			lcd_ShowStr(10, 260, "               ", WHITE, WHITE, 24, 0);
+		}
+	}
+
+	timer_send_temp++;
+	if(timer_send_temp >= SEND_INTERVAL){
+		timer_send_temp = 0;
+
+		// Read Sensor
+		sensor_Read();
+		float temperature = sensor_GetTemperature();
+
+		lcd_Fill(40, 160, 200, 145, WHITE);
+		lcd_ShowFloatNum(40, 160, temperature, 4, RED, WHITE, 20);
+
+		lcd_ShowStr(160, 160, "Celsius", RED, WHITE, 20, 0);
+
+		char buffer[32];
+		sprintf(buffer, "!TEMP:%.2f#", temperature);
+		uart_EspSendBytes((uint8_t*)buffer, strlen(buffer));
+
+
+		lcd_ShowStr(10, 260, ">> Send to esp", BLUE, WHITE, 24, 0);
+
+		upload_status_timer = 20;
 	}
 }
 

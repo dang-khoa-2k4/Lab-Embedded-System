@@ -11,10 +11,14 @@
 
 #define SNAKE_SPEED 4 	// 4 * 50ms
 
+#define NUM_COLORS 10
+
 typedef struct {
     int x;
     int y;
+    uint32_t color;
 } Point;
+
 
 extern Point snake[MAX_SNAKE_LEN];
 extern char score_str[20];
